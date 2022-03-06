@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encargo</title>
+    <style>
+      
+        .menu{
+            width: 30%;
+        }
+        
+        header {
+            background-color: #ffd700;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-style: oblique;
+            
+        }
+        footer {
+            
+            text-align: center;
+            background: #012534;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        td {
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 22px;
+            width: 243px;
+            
+        }
+        button {
+            margin: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            font-size: 22px;
+            background-color: gold;
+            border: 1px groove;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        button:hover{
+            background-color: goldenrod;
+        }
+        h1{
+            margin-top: 0px;
+        }
+        h2 {
+            margin-left: 15px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            margin-left: 20px;
+            font-size: 1.4em;
+        }
+        hr{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 1px;
+            border-color: rgb(204, 204, 204);
+            background-color: rgb(204, 204, 204);
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img id="Logotipo" src="D:\Desktop\Frontend\HTML\Pasteleria\Logotipo fernandinipng.png">
+        <h1>FERNANDINI'S</h1>
+    </header>
+   
+    <h2>Tu pastel</h2>
+    <hr>
+    <h3>Sabores</h3>
+
+    <table>
+        <tr>
+            <td>
+                <img class="menu" name="Vanilla" src="D:\Desktop\Frontend\HTML\Pasteleria\vanilla.jpg"> 
+                <label for="Vainilla">Vainilla</label>
+            </td>
+            <td>$65</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Frutas" src="D:\Desktop\Frontend\HTML\Pasteleria\Frutas.jpg"> 
+                <label for="Frutas">Frutas</label>
+            </td>
+            <td>$66</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Trufas" src="D:\Desktop\Frontend\HTML\Pasteleria\trufas.jpg"> 
+                <label for="Trufas">Trufas</label>
+            </td>
+            <td>$62</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Cheesecake" src="D:\Desktop\Frontend\HTML\Pasteleria\cheesecake.jpg"> 
+                <label for="Cheesecake">Cheesecake</label>
+            </td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Manzana" src="D:\Desktop\Frontend\HTML\Pasteleria\manzana.jpg"> 
+                <label for="Manzana">Manzana</label>
+            </td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Zanahoria" src="D:\Desktop\Frontend\HTML\Pasteleria\zanahoria.jpg"> 
+                <label for="Zanahoria">Zanahoria</label>
+            </td>
+            <td>$64</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Nutellas" src="D:\Desktop\Frontend\HTML\Pasteleria\nutella.jpg"> 
+                <label for="Nutella">Nutella</label>
+            </td>
+            <td>$69</td>
+        </tr>
+        
+
+    </table>
+
+    <h3>Adornos</h3>
+
+    <table>
+        <tr>
+            <td>
+                <img class="menu"  name="CoberturaChocolate" src="D:\Desktop\Frontend\HTML\Pasteleria\cobertura.jpg"> 
+                <label for="CoberturaChocolate">Coberturas de Chocolate</label>
+            </td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu"  name="Fondant" src="D:\Desktop\Frontend\HTML\Pasteleria\fondant.jpg"> 
+                <label for="Fondant">Fondant</label>
+            </td>
+            <td>$4</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="SalsaCaramelo" src="D:\Desktop\Frontend\HTML\Pasteleria\caramelo.png"> 
+                <label for="SalsaCaramelo">Salsa de Caramelo</label>
+            </td>
+            <td>$6</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Betun" src="D:\Desktop\Frontend\HTML\Pasteleria\betun.jpg"> 
+                <label for="Betun">Betun</label>
+            </td>
+            <td>$3</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="menu" name="Glaseado" src="D:\Desktop\Frontend\HTML\Pasteleria\glaseado.jpg"> 
+                <label for="Glaseado">Glaseado</label>
+            </td>
+            <td>$4</td>
+        </tr>
+    </table>
+  
+ 
+    <button ><a href="TareaPanaderiaFormulario.html">Haz tu pedido</a></button>
+
+    <footer>
+        <strong><p>CONTACTANOS</p></strong>
+        <p> Tel: 7831367756</p>
+        <p>Direccion: Calle 16 de Septiembre Col. Azteca  </p>
+        <p>Horario de atencion: Lunes - Sabado</p>
+    </footer>
+</body>
+</html>

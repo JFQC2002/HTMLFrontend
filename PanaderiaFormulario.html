@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    
+    <style>
+        header {    
+            background-color: #ffd700;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-style: oblique;
+            
+        }
+        img{
+            position: relative;
+            width: 20%;
+            margin-top: 20px;
+        }
+        h2{
+            margin-top: 30px;
+            margin-left: 20px;
+            
+        }
+        div{
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 13px 20px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        table{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+         .Encabezado{
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 20px;
+         }
+            
+        td{
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 15px;
+           
+        }
+        label{
+            margin-left: 30px;
+            font-size: 20px;
+        }
+        input{
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(204, 204, 204);
+            height: 20px;
+           
+        }
+        button {
+            margin: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            font-size: 22px;
+            background-color: gold;
+            border: 1px groove;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            
+        }
+        textarea{
+            margin-left: 30px;
+            margin-top: 10px;
+            width: 30%;
+            height: 100px;
+        }
+        button:hover{
+            background-color: goldenrod;
+        }
+        footer {
+            
+            text-align: center;
+            background: #012534;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style> 
+
+</head>
+<body>
+    <header>
+        <img src="D:\Desktop\Frontend\HTML\Pasteleria\Logotipo fernandinipng.png">
+        <h1>Realiza tu pedido</h1>
+    </header>
+    
+    <h2>Formulario</h2>
+    <!--INFORMACION PERSONAL-->
+    <div>
+        <label for="Nombre">Nombre(s)</label>
+        <input type="text" name="Nombre" value="" placeholder="Nombre(s)">
+        <br>
+        <label for="aMaterno">Apellido Materno</label>
+        <input type="text" name="aMaterno" value="" placeholder="Apellido Materno">
+        <br>
+        <label for="aPaterno">Apellido Paterno</label>
+        <input type="text" name="aPaterno" value="" placeholder="Apellido Paterno">
+        <br>
+        <label for="Correo">Correo Electronico</label>
+        <input type="text" name="Correo" value="" placeholder="Correo Electronico">
+        <br>
+        <label for="Tel">Telefono</label>
+        <input type="text" name="Tel" value="" placeholder="Telefono">
+        <br>
+        <label for="Direccion">Direccion</label>
+        <input type="text" name="Direccion" value="" placeholder="Direccion">
+        <br><br>
+        <label for="Cantidad">Cantidad de Pasteles (1 - 50):</label>
+        <br>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+        <br>
+        <label for="Fecha">Fecha de entrega</label>
+        <input type="datetime-local" name="Fecha"placeholder="dd/mm/aa">
+        <br>
+    </div>
+    <!--PASTELES-->
+    <table>
+        <tr>
+            <td>
+                <p class="Encabezado"><strong>Sabores</strong></p>
+            </td>
+            <td>
+                <p class="Encabezado"><strong>Adornos</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Vainilla" value="Vainilla">
+                <label for="Vainilla">Vainilla</label>
+            </td>
+            <td>
+                <input type="checkbox" name="CoberturaChocolate" value="CoberturaChocolate">
+                <label for="CoberturaChocolate">Coberturas de Chocolate</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <input type="checkbox" name="Frutas" value="Frutas">
+                <label for="Frutas">Frutas</label>
+            </td>
+            <td>
+                <input type="checkbox" name="Fondant" value="Fondant">
+                <label for="Fondant">Fondant</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Trufas" value="Trufas">
+                <label for="Trufas">Trufas</label>
+            </td>
+            <td>
+                <input type="checkbox" name="SalsaCaramelo" value="SalsaCaramelo">
+                <label for="SalsaCaramelo">Salsa de Caramelo</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Cheesecake" value="Cheesecake">
+                <label for="Cheesecake">Cheesecake</label>
+            </td>
+            <td>
+                <input type="checkbox" name="Betun" value="Betun">
+                <label for="Betun">Betun</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Manzana" value="Manzana">
+                <label for="Manzana">Manzana</label>
+            </td>
+            <td>
+                <input type="checkbox" name="Glaseado" value="Glaseado">
+                <label for="Glaseado">Glaseado</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Zanahoria" value="Zanahoria">
+                <label for="Zanahoria">Zanahoria</label>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Nutella" value="Nutella">
+                <label for="Nutella">Nutella</label>
+            </td>
+            
+        </tr>
+        
+
+    </table>
+    <br>
+    <label for="Descripcion">Descripcion del pedido</label><br>
+    <textarea name="Descripcion" placeholder="Descripcion"></textarea>
+    <br>
+
+   <button onclick="alert('Gracias por su compra\nRevise su correo para ver los detalles de su compra');">Confirmar pedido</button>
+
+   <footer>
+    <strong><p>CONTACTANOS</p></strong>
+    <p> Tel: 7831367756</p>
+    <p>Direccion: Calle 16 de Septiembre Col. Azteca  </p>
+    <p>Horario de atencion: Lunes - Sabado</p>
+</footer>
+</body>
+</html>
